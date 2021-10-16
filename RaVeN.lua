@@ -59,6 +59,29 @@ else
 io.popen("cd File_Bot && wget https://raw.githubusercontent.com/Yosef-lbban/Files_RaVeN/main/File_Bot/games.lua") 
 print("end wget => games.lua")
 end
+io.popen("mkdir File_Bot") 
+if io.open("File_Bot/ChangeName.lua","r") then
+io.close(io.open("File_Bot/ChangeName.lua","r"))
+print("done => ChangeName.lua")
+else
+io.popen("cd File_Bot && wget https://raw.githubusercontent.com/Yosef-lbban/Files_RaVeN/main/File_Bot/ChangeName.lua") 
+print("end wget => ChangeName.lua")
+end
+io.popen("mkdir File_Bot") 
+if io.open("File_Bot/ChangePhoto.lua","r") then
+io.close(io.open("File_Bot/ChangePhoto.lua","r"))
+print("done => ChangePhoto.lua")
+else
+io.popen("cd File_Bot && wget https://raw.githubusercontent.com/Yosef-lbban/Files_RaVeN/main/File_Bot/ChangePhoto.lua") 
+print("end wget => ChangePhoto.lua")
+end
+io.popen("mkdir File_Bot") 
+if io.open("File_Bot/ChangeUser.lua","r") then
+io.close(io.open("File_Bot/ChangeUser.lua","r"))
+print("done => ChangeUser.lua")
+else
+io.popen("cd File_Bot && wget https://raw.githubusercontent.com/Yosef-lbban/Files_RaVeN/main/File_Bot/ChangeUser.lua") 
+print("end wget => ChangeUser.lua")end
 end
 print(t)
 function vardump(value)  
@@ -2921,15 +2944,15 @@ tdcli_function ({ID = "GetUser",user_id_ = msg.sender_user_id_},function(arg,dat
 send(msg.chat_id_, msg.id_,' *🇸🇦👈︙بواسطه »* ['..Rutba(msg.sender_user_id_,msg.chat_id_)..'](T.ME/'..(data.username_ or 'yousef_labban1')..') \n*🇸🇦👈︙تـم قفـل جميع الاوامر* ')
 end,nil)   
 end
-if text == 'قفل الاباحي' and Mod(msg) and msg.reply_to_message_id_ == 0 then 
+if text == 'قفل السب' and Mod(msg) and msg.reply_to_message_id_ == 0 then 
 database:set(bot_id.."lock:Lock:Xn"..msg.chat_id_,'del')  
 tdcli_function ({ID = "GetUser",user_id_ = msg.sender_user_id_},function(arg,data) 
-send(msg.chat_id_, msg.id_,' *🇸🇦👈︙بواسطه »* ['..Rutba(msg.sender_user_id_,msg.chat_id_)..'](T.ME/'..(data.username_ or 'yousef_labban1')..') \n*🇸🇦👈︙تـم قفـل الاباحي* ')
+send(msg.chat_id_, msg.id_,' *🇸🇦👈︙بواسطه »* ['..Rutba(msg.sender_user_id_,msg.chat_id_)..'](T.ME/'..(data.username_ or 'yousef_labban1')..') \n*🇸🇦👈︙تـم قفـل السب* ')
 end,nil)   
-elseif text == 'فتح الاباحي' and Mod(msg) and msg.reply_to_message_id_ == 0 then 
+elseif text == 'فتح السب' and Mod(msg) and msg.reply_to_message_id_ == 0 then 
 database:del(bot_id.."lock:Lock:Xn"..msg.chat_id_)  
 tdcli_function ({ID = "GetUser",user_id_ = msg.sender_user_id_},function(arg,data) 
-send(msg.chat_id_, msg.id_,' *🇸🇦👈︙بواسطه »* ['..Rutba(msg.sender_user_id_,msg.chat_id_)..'](T.ME/'..(data.username_ or 'yousef_labban1')..') \n*🇸🇦👈︙تـم فتح الاباحي* ')
+send(msg.chat_id_, msg.id_,' *🇸🇦👈︙بواسطه »* ['..Rutba(msg.sender_user_id_,msg.chat_id_)..'](T.ME/'..(data.username_ or 'yousef_labban1')..') \n*🇸🇦👈︙تـم فتح السب* ')
 end,nil)   
 end
 if text == 'فتح الانلاين' and msg.reply_to_message_id_ == 0 and Mod(msg) then 
@@ -11151,7 +11174,7 @@ local Teext =[[
 *🇸🇦� الملفات*
 *🇸🇦� الصور*
 *🇸🇦� التفليش*
-*🇸🇦� الاباحي*
+*🇸🇦� السب*
 *ٴ≪══════YL══════≫*
 *🇸🇦� الماركداون*
 *🇸🇦� البوتات*
