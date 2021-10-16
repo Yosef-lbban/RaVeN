@@ -59,6 +59,7 @@ else
 io.popen("cd File_Bot && wget https://raw.githubusercontent.com/Yosef-lbban/Files_RaVeN/main/File_Bot/games.lua") 
 print("end wget => games.lua")
 end
+<<<<<<< HEAD
 io.popen("mkdir File_Bot") 
 if io.open("File_Bot/ChangeName.lua","r") then
 io.close(io.open("File_Bot/ChangeName.lua","r"))
@@ -83,6 +84,8 @@ else
 io.popen("cd File_Bot && wget https://raw.githubusercontent.com/Yosef-lbban/Files_RaVeN/main/File_Bot/ChangeUser.lua") 
 print("end wget => ChangeUser.lua")
 end
+=======
+>>>>>>> parent of 56c4afc (Update RaVeN.lua)
 end
 print(t)
 function vardump(value)  
@@ -2945,15 +2948,15 @@ tdcli_function ({ID = "GetUser",user_id_ = msg.sender_user_id_},function(arg,dat
 send(msg.chat_id_, msg.id_,' *🇸🇦👈︙بواسطه »* ['..Rutba(msg.sender_user_id_,msg.chat_id_)..'](T.ME/'..(data.username_ or 'yousef_labban1')..') \n*🇸🇦👈︙تـم قفـل جميع الاوامر* ')
 end,nil)   
 end
-if text == 'قفل السب' and Mod(msg) and msg.reply_to_message_id_ == 0 then 
+if text == 'قفل الاباحي' and Mod(msg) and msg.reply_to_message_id_ == 0 then 
 database:set(bot_id.."lock:Lock:Xn"..msg.chat_id_,'del')  
 tdcli_function ({ID = "GetUser",user_id_ = msg.sender_user_id_},function(arg,data) 
-send(msg.chat_id_, msg.id_,' *🇸🇦👈︙بواسطه »* ['..Rutba(msg.sender_user_id_,msg.chat_id_)..'](T.ME/'..(data.username_ or 'yousef_labban1')..') \n*🇸🇦👈︙تـم قفـل السب* ')
+send(msg.chat_id_, msg.id_,' *🇸🇦👈︙بواسطه »* ['..Rutba(msg.sender_user_id_,msg.chat_id_)..'](T.ME/'..(data.username_ or 'yousef_labban1')..') \n*🇸🇦👈︙تـم قفـل الاباحي* ')
 end,nil)   
-elseif text == 'فتح السب' and Mod(msg) and msg.reply_to_message_id_ == 0 then 
+elseif text == 'فتح الاباحي' and Mod(msg) and msg.reply_to_message_id_ == 0 then 
 database:del(bot_id.."lock:Lock:Xn"..msg.chat_id_)  
 tdcli_function ({ID = "GetUser",user_id_ = msg.sender_user_id_},function(arg,data) 
-send(msg.chat_id_, msg.id_,' *🇸🇦👈︙بواسطه »* ['..Rutba(msg.sender_user_id_,msg.chat_id_)..'](T.ME/'..(data.username_ or 'yousef_labban1')..') \n*🇸🇦👈︙تـم فتح السب* ')
+send(msg.chat_id_, msg.id_,' *🇸🇦👈︙بواسطه »* ['..Rutba(msg.sender_user_id_,msg.chat_id_)..'](T.ME/'..(data.username_ or 'yousef_labban1')..') \n*🇸🇦👈︙تـم فتح الاباحي* ')
 end,nil)   
 end
 if text == 'فتح الانلاين' and msg.reply_to_message_id_ == 0 and Mod(msg) then 
@@ -11165,6 +11168,7 @@ local Teext =[[
 *🇸🇦 👈  قفل + فتح ← الامر…*
 *🇸🇦 👈  ← { بالتقيد ، بالطرد ، بالكتم }*
 *ٴ≪══════YL══════≫*
+<<<<<<< HEAD
 *🇸🇦 👈  الروابط*
 *🇸🇦 👈  المعرف*
 *🇸🇦 👈  التاك*
@@ -11176,6 +11180,19 @@ local Teext =[[
 *🇸🇦 👈  الصور*
 *🇸🇦 👈  التفليش*
 *🇸🇦 👈  السب*
+=======
+*🇸🇦� الروابط*
+*🇸🇦� المعرف*
+*🇸🇦� التاك*
+*🇸🇦� الشارحه*
+*🇸🇦� التعديل*
+*🇸🇦� التثبيت*
+*🇸🇦� المتحركة*
+*🇸🇦� الملفات*
+*🇸🇦� الصور*
+*🇸🇦� التفليش*
+*🇸🇦� الاباحي*
+>>>>>>> parent of 56c4afc (Update RaVeN.lua)
 *ٴ≪══════YL══════≫*
 *🇸🇦 👈  الماركداون*
 *🇸🇦 👈  البوتات*
