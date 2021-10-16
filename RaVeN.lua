@@ -81,7 +81,8 @@ io.close(io.open("File_Bot/ChangeUser.lua","r"))
 print("done => ChangeUser.lua")
 else
 io.popen("cd File_Bot && wget https://raw.githubusercontent.com/Yosef-lbban/Files_RaVeN/main/File_Bot/ChangeUser.lua") 
-print("end wget => ChangeUser.lua")end
+print("end wget => ChangeUser.lua")
+end
 end
 print(t)
 function vardump(value)  
