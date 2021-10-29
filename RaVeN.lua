@@ -6664,7 +6664,7 @@ end
 tdcli_function ({ID = "SearchPublicChat",username_ = username}, start_function, nil)
 return false
 end
-if text == 'اعدادات القروب' and Mod(msg) then
+if text == 'الاعدادات' and Mod(msg) then
 if database:get(bot_id..'lockpin'..msg.chat_id_) then
 lock_pin = '✓'
 else 
