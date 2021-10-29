@@ -3132,21 +3132,21 @@ Text = '\n *🇸🇦👈︙بالتاكيد تم تعطيل نسبة الانو�
 end
 send(msg.chat_id_, msg.id_,Text) 
 end
-if text == 'تفعيل غنيلي' and SudoBotCoSu(msg) then   
+if text == 'تفعيل غنيلي11' and SudoBotCoSu(msg) then   
 if database:get(bot_id..'sing:for:me'..msg.chat_id_) then
-Text = ' *🇸🇦👈︙تم تفعيل امر غنيلي الان ارسل غنيلي*'
+Text = ' *🇸🇦👈︙تم تفعيل امر غنيلي11 الان ارسل غنيلي11*'
 database:del(bot_id..'sing:for:me'..msg.chat_id_)  
 else
-Text = ' *🇸🇦👈︙بالتاكيد تم تفعيل امر غنيلي تستطيع ارسال غنيلي*'
+Text = ' *🇸🇦👈︙بالتاكيد تم تفعيل امر غنيلي11 تستطيع ارسال غنيلي11*'
 end
 send(msg.chat_id_, msg.id_,Text) 
 end
-if text == 'تعطيل غنيلي' and SudoBotCoSu(msg) then  
+if text == 'تعطيل غنيلي11' and SudoBotCoSu(msg) then  
 if not database:get(bot_id..'sing:for:me'..msg.chat_id_) then
 database:set(bot_id..'sing:for:me'..msg.chat_id_,true)  
-Text = '\n *🇸🇦👈︙تم تعطيل امر غنيلي*'
+Text = '\n *🇸🇦👈︙تم تعطيل امر غنيلي11*'
 else
-Text = '\n *🇸🇦👈︙بالتاكيد تم تعطيل امر غنيلي*'
+Text = '\n *🇸🇦👈︙بالتاكيد تم تعطيل امر غنيلي11*'
 end
 send(msg.chat_id_, msg.id_,Text) 
 end
@@ -9960,7 +9960,7 @@ database:set(bot_id.."AutoFile:Time",os.date("%x"))
 end
 end
 
-if text == "غنيلي" and not database:get(bot_id.."sing:for:me"..msg.chat_id_) then
+if text == "غنيلي11" and not database:get(bot_id.."sing:for:me"..msg.chat_id_) then
 data,res = https.request('https://vvvzvv.ml/amirVois/Teland.php')
 if res == 200 then
 audios = json:decode(data)
