@@ -2738,9 +2738,9 @@ end
 if text == 'جلب نسخه الاحتياطيه' and DevRaVeNW(msg) then  
 GetFile_Bot(msg)
 end
-if text == 'الاوامر المضافه' and Constructor(msg) then
+if text == 'الاوامر المضافة' and Constructor(msg) then
 local list = database:smembers(bot_id..'List:Cmd:Group:New'..msg.chat_id_..'')
-t = " *🇸🇦 ︙قائمة الاوامر المضافه*  \n*≪══════YL══════≫*\n"
+t = " *🇸🇦 ︙قائمة الاوامر المضافة*  \n*≪══════YL══════≫*\n"
 for k,v in pairs(list) do
 Cmds = database:get(bot_id.."Set:Cmd:Group:New1"..msg.chat_id_..':'..v)
 print(Cmds)
@@ -2751,18 +2751,18 @@ t = t..""..k..">> ("..v..") \n"
 end
 end
 if #list == 0 then
-t = " *🇸🇦 ︙لا يوجد اوامر مضافه*"
+t = " *🇸🇦 ︙لا يوجد اوامر مضافة*"
 end
 send(msg.chat_id_, msg.id_,'['..t..']')
 end
-if text == 'حذف الاوامر المضافه' or text == 'مسح الاوامر المضافه' then
+if text == 'حذف الاوامر المضافة' or text == 'مسح الاوامر المضافة' then
 if Constructor(msg) then 
 local list = database:smembers(bot_id..'List:Cmd:Group:New'..msg.chat_id_)
 for k,v in pairs(list) do
 database:del(bot_id.."Set:Cmd:Group:New1"..msg.chat_id_..':'..v)
 database:del(bot_id..'List:Cmd:Group:New'..msg.chat_id_)
 end
-send(msg.chat_id_, msg.id_,' *🇸🇦 ︙تم ازالة جميع الاوامر المضافه*')  
+send(msg.chat_id_, msg.id_,' *🇸🇦 ︙تم ازالة جميع الاوامر المضافة*')  
 end
 end
 if text == "ترتيب الاوامر" and Constructor(msg) then
@@ -7556,10 +7556,10 @@ end
 if text == 'الصلاحيات' and Mod(msg) then 
 local list = database:smembers(bot_id..'Coomds'..msg.chat_id_)
 if #list == 0 then
-send(msg.chat_id_, msg.id_,' *🇸🇦 ︙لا توجد صلاحيات مضافه*')
+send(msg.chat_id_, msg.id_,' *🇸🇦 ︙لا توجد صلاحيات مضافة*')
 return false
 end
-t = "\n *🇸🇦 ︙قائمة الصلاحيات المضافه* \n*≪══════YL══════≫*\n"
+t = "\n *🇸🇦 ︙قائمة الصلاحيات المضافة* \n*≪══════YL══════≫*\n"
 for k,v in pairs(list) do
 var = database:get(bot_id.."Comd:New:rt:bot:"..v..msg.chat_id_)
 if var then
@@ -11300,7 +11300,7 @@ local Teext =[[
 *🇸🇦   حذف + امر ...*
 *ٴ≪══════YL══════≫*
 *🇸🇦   امر *
-*🇸🇦   الاوامر المضافه*
+*🇸🇦   الاوامر المضافة*
 *ٴ≪══════YL══════≫*
 [Source Channel](t.me/yousef_labban1)
 ]]
@@ -11410,7 +11410,7 @@ local Teext =[[
 *🇸🇦   عدد القروب*
 *🇸🇦   ردود المدير*
 *🇸🇦   اسم بوت + الرتبه*
-*🇸🇦   الاوامر المضافه*
+*🇸🇦   الاوامر المضافة*
 *🇸🇦   وضع توحيد + توحيد*
 *🇸🇦   تعين عدد الكتم + رقم*
 *🇸🇦   التوحيد*
