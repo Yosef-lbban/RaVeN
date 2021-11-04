@@ -9616,7 +9616,7 @@ database:del(bot_id..'help8_text')
 database:del(bot_id..'help9_text')
 database:del(bot_id..'help10_text')
 database:del(bot_id..'help11_text')
-send(msg.chat_id_, msg.id_, ' *🇸🇦 ︙تم استعادة الاوامر القديمه*')
+send(msg.chat_id_, msg.id_, ' *🇸🇦 ︙تم استعادة الاوامر القديمة*')
 end
 if text == 'تغير امر الاوامر' and DevRaVeNW(msg) then
 send(msg.chat_id_, msg.id_, ' *🇸🇦 ︙الان يمكنك ارسال الرسالة الاوامر*')
