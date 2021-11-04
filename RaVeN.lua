@@ -2642,7 +2642,7 @@ end
 end
 end,nil)   
 end
-if text == 'السورس' or text == 'سورس' or text == 'ياسورس' or text == 'يا سورس' then  
+if text == '11السورس' or text == '11سورس' or text == 'يا11سورس' or text == 'يا 11سورس' then  
 Text = "مرحبا بك في بوت حماية يوسف\n\n[✫  قناة البوت](http://t.me/yousef_labban1)\n\n[✫  للمزيد من البوتات](http://t.me/yousef_labban1)\n\n[✫  المطور الرسمي](http://t.me/yousef_labban)\n\n[✫  اصنع بوتك](http://t.me/Mhsliem15botT)"
 keyboard = {} 
 keyboard.inline_keyboard = {
